@@ -8,7 +8,7 @@ fn main() -> Result<(), cc::Error> {
         .include("include")
         .define("SIMSIMD_NATIVE_F16", "0")
         .define("SIMSIMD_NATIVE_BF16", "0")
-        .define("SIMSIMD_DYNAMIC_DISPATCH", "1")
+        .define("SIMSIMD_DYNAMIC_DISPATCH", "0")
         .opt_level(3)
         .flag_if_supported("-pedantic") // Strict compliance when supported
         .warnings(false);
